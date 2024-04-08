@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>STOCK MARKET CRM</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <style>
+        body{
+            border: 1px solid rgb(58, 56, 56);
+            margin: 3px;
+            padding-bottom: 5px;
+        }
+        hr{
+            color: black!important;
+        }
+        .image-upload>input {
+display: none;
+}
+        .form-label {
+            margin-left: 0;
+        }
+        .form-control {
+            margin-left: 0;
+            margin-top: 5px; /* Adjust the margin-top value as needed */
+        }
+        .label-small {
+    font-size: 0.5rem; /* Adjust label font size */
+    font-weight: bold;
+    margin-bottom: 0.2rem; /* Adjust bottom margin for labels */
+}
+
+.input-small {
+    font-size: 0.5rem; /* Adjust input font size */
+    margin-bottom: 0.4rem; /* Adjust bottom margin for inputs */
+    margin-left: 0rem; /* Remove left margin for inputs */
+}
+.btn{
+color: rgb(130, 130, 180);
+}
+@media only screen and (min-width: 768px) {
+    .col-md-1 {
+        width: 6% !important;
+
+    }
+    .col-md-2 {
+        width: 8% !important;
+    }
+    .top{
+        margin-top: -80px;
+    }
+}
+    </style>
+
+    <body>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col d-flex flex-column justify-content-center ">
+                        <form class="d-flex justify-content-between justify-content-md-center justify-content-sm-center justify-content-xs-center flex-wrap"> <!-- Changed justify-content-center to justify-content-between -->
+                            <button class="btn btn-sm btn-light m-2 fw-bold" type="button">ADD STOCK</button>
+                            <button class="btn btn-sm btn-light m-2 fw-bold" type="button">ADD IMITATION STOCK</button>
+                            <button class="btn btn-sm btn-light m-2 fw-bold" type="button">ADD RAW METAL</button>
+                            <button class="btn btn-sm btn-light m-2 fw-bold" type="button">ADD CRYSTAL</button>
+                            <button class="btn btn-sm btn-light m-2 fw-bold" type="button">STERLING SILVER</button>
+                            <button class="btn btn-sm btn-light m-2 fw-bold" type="button">STOCK LIST</button>
+                            <button class="btn btn-sm btn-light m-2 fw-bold" type="button">AVAILABLE STOCK LIST</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <hr>
+        <section>
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-md-6"> <!-- Adjust column size based on your design -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <div class="image-upload">
+                                    <label for="file-input">
+                                        <img src="icon.jpeg" class="img-fluid" style="width: 30px; height: 30px;">
+                                    </label>
+                                    <input id="file-input" type="file" />
+                                    <label class="custom-file-label fw-bold" for="inputGroupFile04">ADD STRALLERING SILVER STOCK</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+         <hr>
+        <section>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <div class="col-md-12 p-1">
+                                <label for="exampleInputEmail1" class="form-label fw-bold fs-6">BILL DATE</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <input type="text" value="15" class="form-control" placeholder="DD">
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <input type="text" value="JAN" class="form-control" placeholder="MM">
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12">
+                                    <input type="text" value="2019" class="form-control" placeholder="YYYY">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <div class="col-md-12 p-1">
+                                <label for="exampleInputEmail1" class="form-label fw-bold fs-6">FIRM NAME</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-12">
+                                    <input type="text" value="ABC Corporation" class="form-control" placeholder="FIRM NAME">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <div class="col-md-12 p-1">
+                                <label for="exampleInputEmail1" class="form-label fw-bold fs-6">ITEM ID</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <input type="text" value="A" class="form-control" placeholder="ITEM ID">
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-12 ">
+                                    <input type="text" value="1234" class="form-control" placeholder="ITEM ID">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <div class="col-md-12 p-1">
+                                <label for="exampleInputEmail1" class="form-label fw-bold fs-6">BRAND/SELLER NAME</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 col-sm-7 col-12 ">
+                                    <input type="text" value="BRAND/SELLER NAME" class="form-control" placeholder="BRAND NAME">
+                                </div>
+                                <div class="col-md-4 col-sm-5 col-12 text-info mt-2" style="margin: auto;">
+                                    <i class="fas fa-computer fa-lg ps-2"></i>
+                                    <i class="fas fa-video fa-lg ps-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+         <hr>
+         <section>
+        <div class="container mt-2">
+        <div class="row g-3 align-items-center justify-content-between">
+            <div class="col-md-3 col-sm-12 col-12">
+                <input type="text" value="BARCODE" class="form-control" placeholder="BARCODE">
+            </div>
+            <div class="col-md-2 col-sm-3 col-12 ms-md-4 fs-6">
+                <label for="inputPassword1" class="col-form-label fw-bold mt-2">MFG.DATE</label>
+            </div>
+            <div class="col-md-1 col-sm-3 col-12">
+                <input type="text" value="15" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-2 col-sm-3 col-12">
+                <input type="text" value="JAN" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-2 col-sm-3 col-12">
+                <input type="text" value="2019" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-2 col-sm-3 col-12 ms-md-4 fs-6">
+                <label for="inputPassword5" class="col-form-label fw-bold mt-2">EXP.DATE</label>
+            </div>
+            <div class="col-md-1 col-sm-3 col-12">
+                <input type="text" value="15" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-2 col-sm-3 col-12">
+                <input type="text" value="JAN" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-2 col-sm-3 col-12">
+                <input type="text" value="2022" class="form-control" placeholder="">
+            </div>
+        </div>
+    </div>
+         </section>
+         <hr>
+        <section>
+    <div class="container mt-2">
+        <div class="row gx-2">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+                <label for="exampleInputEmail1" class="form-label label-small">CAREGORY/NAME</label>
+                <input type="text" value="A" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="ITEM NAME" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-2">
+                <label for="exampleInputEmail1" class="form-label label-small">SHAPE/SIZE</label>
+            
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                <input type="text" value="ITEM SHAPE" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="ITEM SIZE" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="ITEM COLOR" class="form-control input-small" placeholder="ITEM ID">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-2">
+                <label for="exampleInputEmail1" class="form-label label-small">LENGTH/WIDTH</label>
+                <input type="text" value="ITEM LENGTH" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="ITEM WIDTH" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="OTHER INFO" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-1">
+                <label for="exampleInputEmail1" class="form-label label-small">MODAL</label>
+                <input type="text" value="A" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="SELL PACKAGE" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-1">
+                <label for="exampleInputEmail1" class="form-label label-small">QTY/GSWT</label>
+                <input type="text" value="QTY" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="BY QTY" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="GS WT" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="GM" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-2">
+                <label for="exampleInputEmail1" class="form-label label-small">CORE/PUR/SELL</label>
+                <input type="text" value="PUR RATE" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="SELL RATE" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-1">
+                <label for="exampleInputEmail1" class="form-label label-small">PUR/SELL</label>
+                <input type="text" value="UNIT PUR" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="UNIT SELL" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-2">
+                <label for="exampleInputEmail1" class="form-label label-small">LAB/MKG CHRG</label>
+                <div class="row gx-1">
+                    <div class="col-md-6">
+                        <input type="text" value="LAB CHRG" class="form-control input-small" placeholder="LAB CHRG">
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" value="pp" class="form-control input-small" placeholder="PP">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" value="LAB CHRG" class="form-control input-small" placeholder="LAB CHRG">
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" value="pp" class="form-control input-small" placeholder="pp">
+                    </div>
+                    <div class="col-md-11">
+                        <input type="text" value="TOTAL MKG/ADD" class="form-control input-small" placeholder="ITEM ID">
+                        <input type="text" value="FINAL SELL PRICE" class="form-control  input-small" placeholder="ITEM ID">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-1">
+                <label for="exampleInputEmail1" class="form-label label-small">TOTAL</label>
+                <input type="text" value="TOTAL LAB CHRG" class="form-control input-small " placeholder="ITEM ID">
+                <input type="text" value="TOTAL PUR" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="TOTAL PRICE" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-1">
+                <label for="exampleInputEmail1" class="form-label label-small">CGST</label>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                <input type="text" value="LAB %" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="CGST %" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-1">
+                <label for="exampleInputEmail1" class="form-label label-small">AMT</label>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                <input type="text" value="LAB CGST" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="CGST AMT" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-1">
+                <label for="exampleInputEmail1" class="form-label label-small">SGST</label>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                <input type="text" value="LAB %" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="SGST %" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-1">
+                <label for="exampleInputEmail1" class="form-label label-small">AMT</label>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                <input type="text" value="LAB SGST" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="SGST AMT" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-1">
+                <label for="exampleInputEmail1" class="form-label label-small">IGST</label>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                <input type="text" value="LAB %" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="IGST %" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-1">
+                <label for="exampleInputEmail1" class="form-label label-small">AMT</label>
+                <div class="col-xs-12 col-sm-12 col-md-10">
+                <input type="text" value="LAB IGST" class="form-control input-small" placeholder="ITEM ID">
+                <input type="text" value="IGST AMT" class="form-control input-small" placeholder="ITEM ID">
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4"></div>
+            <div class="col-xs-12 col-sm-6 col-md-4"></div>
+            <div class="col-xs-12 col-sm-6 col-md-4 top">
+                <div class="row gx-1">
+                    <div class="col-md-4">
+                        <input type="text" value="GST" class="form-control input-small" placeholder="LAB CHRG">
+                    </div>
+                    <div class="col-md-7">
+                        <input type="text" value="FINAL PUR PRICE" class="form-control input-small" placeholder="PP">
+                    </div>
+            </div>
+            </div>
+    </div>
+        </section>
+        <hr>
+        <section class="text-center">
+    <input class="btn btn-primary text-dark fw-bold" type="submit" value="Submit">
+        </section>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
